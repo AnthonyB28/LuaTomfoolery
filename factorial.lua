@@ -5,8 +5,3 @@ function Factorial(n)
 		return n * Factorial(n-1);
 	end
 end
-
-print("enter a number");
-inputNumber = io.read("*number");
-factorialNumber = Factorial(inputNumber);
-print(inputNumber .. "'s factorial is " .. factorialNumber);
