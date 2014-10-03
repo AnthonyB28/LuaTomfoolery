@@ -22,7 +22,7 @@ dofile("vectors.lua");
 do
 	x, y, z = 3.0, 1.0, 2.0;
 	print("Normalizing (3.4, 1.0) 2D vector: ".. normalize2DVec(x, y));
-	print("(".. x .. " , " .. y .. " , " .. z .. ") 3D vector");
+	io.write("(", x, " , ", y, " , ", z , ") 3D vector\n");
 	print("Magnitude:" .. magnitude3DVec(x, y, z));
 	io.write("Normalized x,y,z: ") print(normalize3DVec(x, y, z)); --This is kind of nifty
 end
