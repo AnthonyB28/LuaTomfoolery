@@ -6,7 +6,8 @@ We'll do basic algorithms and functions, try them out as external files.]]
 dofile("factorial.lua")
 do
 	print("enter a number");
-	inputNumber = io.read("*number");
+	--inputNumber = io.read("*number");
+	inputNumber = 12;
 	factorialNumber = Factorial(inputNumber);
 	print(inputNumber .. "'s factorial is " .. factorialNumber);
 end
@@ -26,3 +27,6 @@ do
 	print("Magnitude:" .. magnitude3DVec(x, y, z));
 	io.write("Normalized x,y,z: ") print(normalize3DVec(x, y, z)); --This is kind of nifty
 end
+
+--OS
+print(os.date("Today is %A %c"));
