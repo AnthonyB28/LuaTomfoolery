@@ -2,6 +2,8 @@
 Doing some cool lua stuff for the first time.
 We'll do basic algorithms and functions, try them out as external files.]]
 
+timer = os.clock();
+
 -- Factorial Numbers & IO
 dofile("factorial.lua")
 do
@@ -30,3 +32,6 @@ end
 
 --OS
 print(os.date("Today is %A %c"));
+
+--Timer
+print(string.format("elapsed time: %.4f\n", os.clock() - timer));
